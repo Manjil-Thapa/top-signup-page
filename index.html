@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOP - Sign-Up</title>
+  </head>
+  <body>
+    <main>
+      <h1>ODIN</h1>
+      <p>
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. Sign up
+        <span>now</span> to get started.
+      </p>
+
+      <fieldset>
+        <legend>Let's do this!</legend>
+        <form action="#" id="sign-up">
+          <label for="first-name">First Name</label>
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            minlength="3"
+            required
+          />
+
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="first-name" required />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="number" name="phone" id="phone" required />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="5"
+            maxlength="15"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+            title="requires blah blah blah"
+            required
+          />
+
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            name="password2"
+            id="password2"
+            minlength="5"
+            maxlength="15"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+            title="requires blah blah blah"
+            required
+          />
+        </form>
+
+        <p>
+          By signing up, you are agreeing to our
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            >Terms & Conditions</a
+          >
+          and
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            >Privacy Policy</a
+          >
+        </p>
+      </fieldset>
+      <button id="create" form="sign-up">Create Account</button>
+      <p>
+        Already have an account?
+        <a
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+          >Log in</a
+        >
+      </p>
+    </main>
+    <footer>
+      <p>&#169; The Odin Project</p>
+    </footer>
+  </body>
+</html>
