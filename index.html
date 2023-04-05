@@ -4,84 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>TOP - Sign-Up</title>
   </head>
   <body>
     <main>
-      <h1>ODIN</h1>
-      <p>
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up
-        <span>now</span> to get started.
-      </p>
-
-      <fieldset>
-        <legend>Let's do this!</legend>
-        <form action="#" id="sign-up">
-          <label for="first-name">First Name</label>
-          <input
-            type="text"
-            name="first-name"
-            id="first-name"
-            minlength="3"
-            required
-          />
-
-          <label for="last-name">Last Name</label>
-          <input type="text" name="last-name" id="first-name" required />
-
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />
-
-          <label for="phone">Phone Number</label>
-          <input type="number" name="phone" id="phone" required />
-
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            minlength="5"
-            maxlength="15"
-            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
-            title="requires blah blah blah"
-            required
-          />
-
-          <label for="password2">Confirm Password</label>
-          <input
-            type="password"
-            name="password2"
-            id="password2"
-            minlength="5"
-            maxlength="15"
-            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
-            title="requires blah blah blah"
-            required
-          />
-        </form>
-
-        <p>
-          By signing up, you are agreeing to our
-          <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-            >Terms & Conditions</a
+      <div class="left">
+        <h1>ODIN</h1>
+        <small
+          >Photo by
+          <a href="https://pixabay.com/users/biancavandijk-9606149/"
+            >Bianca Van Dijk</a
           >
-          and
-          <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-            >Privacy Policy</a
-          >
-        </p>
-      </fieldset>
-      <button id="create" form="sign-up">Create Account</button>
-      <p>
-        Already have an account?
-        <a
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-          >Log in</a
-        >
-      </p>
+          on Pixabay
+        </small>
+      </div>
+      <div class="right">
+        <h2>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <span>now</span> to get started.
+        </h2>
+        <div class="signup-container">
+          <fieldset>
+            <legend>Let's do this!</legend>
+            <form action="#" id="sign-up">
+              <label for="first-name">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  minlength="3"
+                  placeholder=" "
+                  required
+                />
+                <span>First name</span>
+              </label>
+              <label for="last-name">
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  minlength="3"
+                  placeholder=" "
+                  required
+                />
+                <span>Last Name</span>
+              </label>
+              <label for="email">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder=" "
+                  required
+                />
+                <span>Email</span>
+              </label>
+              <label for="phone">
+                <input
+                  type="number"
+                  name="phone"
+                  id="phone"
+                  placeholder=" "
+                  required
+                />
+                <span>Phone Number</span>
+              </label>
+              <label for="password">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  minlength="5"
+                  maxlength="15"
+                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                  title="Minimum 8 characters, at least 1 letter and 1 number"
+                  placeholder=" "
+                  required
+                />
+                <span>Password</span>
+              </label>
+              <label for="password2">
+                <input
+                  type="password"
+                  name="password2"
+                  id="password2"
+                  minlength="5"
+                  maxlength="15"
+                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                  title="Minimum 8 characters, at least 1 letter and 1 number"
+                  placeholder=" "
+                  required
+                />
+                <span>Confirm Password</span>
+              </label>
+            </form>
+          </fieldset>
+          <div class="toc">
+            <p>
+              By signing up, you are agreeing to our
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                >Terms & Conditions</a
+              >
+              and
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                >Privacy Policy</a
+              >
+            </p>
+            <button id="create" form="sign-up">Create Account</button>
+            <p>
+              Already have an account?
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                >Log in</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <p>&#169; The Odin Project</p>

@@ -1,0 +1,110 @@
+html {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  background-image: url(/media/abstract.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0;
+}
+main {
+  display: flex;
+  height: 100%;
+  padding: 2rem;
+  gap: 10rem;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 45%;
+}
+h1 {
+  margin-top: 100px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding: 0 10rem;
+}
+h2 {
+  margin: 0 0 4rem 0;
+  font-size: 2rem;
+  max-width: 85%;
+}
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+fieldset {
+  border: none;
+  margin-bottom: auto;
+}
+legend {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-left: 1.25rem;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+input:focus {
+  outline: none;
+}
+form ~ p {
+  text-align: center;
+  margin: 20px 0;
+}
+#create {
+  align-self: flex-start;
+}
+label {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 40px 20px;
+}
+label > span {
+  transition: all 0.2s;
+  transform-origin: top left;
+}
+label > input[placeholder=" "]:not(:focus):placeholder-shown + span {
+  transform: translateY(1em) scale(1.2);
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.toc {
+  margin: 0 2rem;
+}
+footer {
+  margin-top: auto;
+  text-align: center;
+}
+
+/* Remove input type number arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
