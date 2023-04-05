@@ -40,7 +40,7 @@ h1 {
   padding: 0 10rem;
 }
 h2 {
-  margin: 0 0 4rem 0;
+  margin: 2.8rem 0 4rem 0;
   font-size: 2rem;
   max-width: 85%;
 }
@@ -94,8 +94,36 @@ label > input[placeholder=" "]:not(:focus):placeholder-shown + span {
   opacity: 0.5;
 }
 
+input,
+button,
+a {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid black;
+}
+
 .toc {
   margin: 0 2rem;
+}
+#create {
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.2s;
+  color: #0000ff;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 15px;
+  border: none;
+}
+#create:hover {
+  background-position: right center;
+  color: #eee;
+  background-color: #0000ffa4;
 }
 footer {
   margin-top: auto;
