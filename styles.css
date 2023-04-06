@@ -7,7 +7,7 @@ html {
   width: 100vw;
 }
 body {
-  background-image: url(/media/abstract.jpg);
+  background-image: url(media/abstract.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@ main {
   /* width: 50%; */
   width: 850px;
   max-width: 1000px;
-  background-image: url(/media/cat.jpg);
+  background-image: url(media/cat.jpg);
   background-size: contain;
 }
 /* h1::before {
