@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   height: 100%;
   margin: 0;
 }
@@ -20,6 +21,7 @@ main {
   height: 100%;
   padding: 2rem 8rem;
   /* gap: 10rem; */
+  max-width: 87%;
 }
 .left {
   display: flex;
@@ -34,18 +36,12 @@ main {
   content: " ";
   background-image: url(/media/odin-logo.png);
 } */
-.hero {
-  display: flex;
-}
-.hero img {
-  height: 50px;
-  width: 50px;
-}
 h1 {
   margin-top: 100px;
   background-color: rgba(0, 0, 0, 0.34);
   padding: 3rem 0;
   font-size: 3rem;
+  letter-spacing: 10px;
   color: #cfcfcf;
 }
 h1 ~ small {
@@ -63,8 +59,11 @@ a[target="_blank"] {
 }
 h2 {
   margin: 2.8rem 0 4rem 0;
-  font-size: 2rem;
+  font-size: 2.4rem;
   max-width: 85%;
+}
+#start {
+  color: rgb(36, 36, 209);
 }
 .signup-container {
   display: flex;
@@ -161,6 +160,7 @@ footer {
   margin-top: auto;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.15);
+  width: 100%;
 }
 
 /* Remove input type number arrows */
@@ -168,3 +168,72 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
+/* Media queries */
+/* @media only screen and (max-width: 600px) {
+  .left {
+    display: none;
+  }
+} */
+
+/* @media only screen and (min-width: 1930px) {
+  *{
+    font-size: clamp();
+  }
+} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  main {
+    width: 100%;
+    max-width: unset;
+    height: unset;
+    padding-left: unset;
+    padding-right: unset;
+  }
+  .left {
+    display: none;
+  }
+  h2 {
+    margin: 0 2rem 3rem 2rem;
+  }
+  #start {
+    padding-top: 20px;
+  }
+  .right h2 {
+    max-width: 100%;
+    text-align: center;
+  }
+  legend {
+    padding: 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+  label {
+    padding: 1.25rem 3.125rem;
+  }
+  .toc {
+    text-align: center;
+  }
+  .toc p:first-of-type {
+    margin: 20px 0 40px 0;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  ...;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  ...;
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  ...;
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1930px) {
+  ...;
+}
+
+/* clamp(min, val, max) */
