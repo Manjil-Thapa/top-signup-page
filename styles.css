@@ -18,26 +18,48 @@ body {
 main {
   display: flex;
   height: 100%;
-  padding: 2rem;
-  gap: 10rem;
+  padding: 2rem 8rem;
+  /* gap: 10rem; */
 }
 .left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  width: 45%;
+  width: 50%;
+  background-image: url(/media/cat.jpg);
+  background-size: contain;
+}
+/* h1::before {
+  content: " ";
+  background-image: url(/media/odin-logo.png);
+} */
+.hero {
+  display: flex;
+}
+.hero img {
+  height: 50px;
+  width: 50px;
 }
 h1 {
   margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.34);
+  padding: 3rem 0;
+  font-size: 3rem;
+  color: #cfcfcf;
 }
-
+h1 ~ small {
+  color: white;
+}
+a[target="_blank"] {
+  color: yellow;
+}
 .right {
   display: flex;
   flex-direction: column;
   /* justify-content: space-around; */
   align-items: center;
-  padding: 0 10rem;
+  /* padding: 0 8rem; */
 }
 h2 {
   margin: 2.8rem 0 4rem 0;
@@ -72,6 +94,7 @@ input {
 input:focus {
   outline: none;
 }
+
 form ~ p {
   text-align: center;
   margin: 20px 0;
@@ -82,7 +105,8 @@ form ~ p {
 label {
   display: flex;
   flex-direction: column-reverse;
-  padding: 40px 20px;
+  flex-grow: 1;
+  padding: 40px 50px;
 }
 label > span {
   transition: all 0.2s;
@@ -116,7 +140,7 @@ a:hover {
   text-transform: uppercase;
   transition: 0.2s;
   color: #0000ff;
-  box-shadow: 0 0 20px #eee;
+  box-shadow: 0 0 20px #d1d1d1;
   border-radius: 15px;
   border: none;
 }
@@ -125,14 +149,22 @@ a:hover {
   color: #eee;
   background-color: #0000ffa4;
 }
+.toc p:first-of-type {
+  margin-bottom: 3.75rem;
+}
+.toc p:last-of-type,
+legend {
+  font-size: 1.4;
+  font-weight: bold;
+}
 footer {
   margin-top: auto;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 /* Remove input type number arrows */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 0;
 }
